@@ -1,0 +1,38 @@
+{
+  "name": "nahangz-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "dev": "nodemon dist/server.js",
+    "flow:deps": "flow-typed install",
+    "prod": "NODE_ENV=production"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^5.0.0",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.6.0",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-flowtype": "^4.3.0",
+    "flow-bin": "^0.111.3",
+    "flow-typed": "^2.6.2",
+    "nodemon": "^1.19.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "boardgame.io": "^0.34.1",
+    "eslint-plugin-node": "^10.0.0",
+    "nahangz-uxo": "^0.1.0"
+  }
+}
